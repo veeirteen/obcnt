@@ -1,4 +1,5 @@
 import random
+items = ["#"," "]
 def generate():
     chunkx =[]
     o = 0
@@ -6,10 +7,7 @@ def generate():
         chunklinex = []
         i = 0
         while not(i == 8):
-            if random.randint(0,1) == 0:
-                chunklinex.append(" ")
-            else:
-                chunklinex.append("#")
+            chunklinex.append(items[random.randint(0,1)])
             i = i + 1
         chunkx.append(chunklinex)
         o = o + 1 
